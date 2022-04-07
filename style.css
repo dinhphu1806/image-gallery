@@ -58,11 +58,23 @@ h1{
     justify-content: center;
     align-items: center;
     z-index: 100;
+    
 }
+
 .full-img img{
     max-width: 50%;
     height: 80%;
     object-fit: cover;
+    animation: fadein 1s;
+}
+@keyframes fadein{
+    from{
+        /* transform: translateY(-200px) rotate(15deg); */
+        transform: translateY(-200px);
+    }to{
+        transform: translateY(0);
+    }
+    
 }
 /* css nut X */
 .full-img span{
