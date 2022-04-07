@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <h1>Image Gallery</h1>
+    </section>
+    <!-- see-full-image -->
+    <div class="full-img" id="jsfullImgVh">
+        <img src="./img/photo-1.jpg" id="jsfullImg" alt="">
+        <span onclick="closefullImg()">ｘ</span>
+    </div>
+    
+    <section class="img-gallery">
+        <div class="img-item" >
+            <img src="./img/photo-1.jpg" onclick="openfullImg(this.src)" alt="">
+        </div>
+        <div class="img-item">
+            <img src="./img/photo-2.jpg" onclick="openfullImg(this.src)" alt="">
+        </div>
+        <div class="img-item">
+            <img src="./img/photo-3.jpg" onclick="openfullImg(this.src)" alt="">
+        </div>
+        <div class="img-item">
+            <img src="./img/photo-4.jpg" onclick="openfullImg(this.src)" alt="">
+        </div>
+        <div class="img-item">
+            <img src="./img/photo-5.jpg" onclick="openfullImg(this.src)" alt="">
+        </div>
+        <div class="img-item">
+            <img src="./img/photo-6.jpg" onclick="openfullImg(this.src)" alt="">
+        </div>
+        <div class="img-item">
+            <img src="./img/photo-7.jpg" onclick="openfullImg(this.src)" alt="">
+        </div>
+        <div class="img-item">
+            <img src="./img/photo-8.jpg" onclick="openfullImg(this.src)" alt="">
+        </div>
+    </section>
+
+    <script>
+        var jsfullImgVh = document.getElementById("jsfullImgVh");
+        var jsfullImg = document.getElementById("jsfullImg");
+
+         // hàm click vào img hiện fullImg
+        function openfullImg(pic){
+            jsfullImgVh.style.display = "flex";
+            jsfullImg.src = pic;
+        }
+        // hàm đóng fullImg
+        function closefullImg(){
+            jsfullImgVh.style.display = "none";
+
+        }
+
+    </script>
+</body>
+</html>
